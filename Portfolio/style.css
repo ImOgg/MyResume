@@ -168,12 +168,8 @@ img {
         width: 100%;
     }
     .connection input {
-        width: 46%;
-        padding: 15px;
-        margin: 15px;
-        border: 2px solid gray;
-        border-radius: 15px;
-        font-size: 1rem;
+        width: 100%;
+        font-size: 0.6rem;
     }
 }
 
