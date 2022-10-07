@@ -11,7 +11,7 @@ img {
 
 .container {
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
     height: 100vh;
 }
 
@@ -52,6 +52,7 @@ img {
 
 .MyProject {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .pic-resp{
@@ -59,7 +60,7 @@ img {
 }
 .MyProject li {
     list-style: none;
-    width: 33%;
+    width: 31.444444%;
     margin: 0.6rem;
     position: relative;
 }
@@ -162,5 +163,17 @@ img {
     color: rgb(97, 144, 97);
 }
 
-
+@media screen and (max-width: 933px){
+    .MyProject li {
+        width: 100%;
+    }
+    .connection input {
+        width: 46%;
+        padding: 15px;
+        margin: 15px;
+        border: 2px solid gray;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+}
 
