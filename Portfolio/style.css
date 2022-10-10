@@ -12,7 +12,6 @@ img {
 .container {
     margin: auto;
     max-width: 1200px;
-    height: 100vh;
 }
 
 .content {
@@ -31,8 +30,9 @@ img {
 }
 
 .big-head {
-    margin: 15px auto;
-    max-width: 20%;
+    margin: 0.6rem auto;
+    max-width: 200px;
+    max-height: 200px;
 }
 .big-head img:hover{
     transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .3s;
@@ -60,8 +60,8 @@ img {
 }
 .MyProject li {
     list-style: none;
-    width: 31.444444%;
-    margin: 0.6rem;
+    width: 32.33333%;
+    margin: 0.3rem auto;
     position: relative;
 }
 .MyProject li:hover .overlay{
@@ -112,7 +112,7 @@ img {
 .connection input {
     width: 43%;
     padding: 15px;
-    margin: 10px;
+    margin: 0.6rem auto;
     border: 2px solid gray;
     border-radius: 15px;
     font-size: 1rem;
@@ -163,13 +163,28 @@ img {
     color: rgb(97, 144, 97);
 }
 
-@media screen and (max-width: 933px){
+@media screen and (max-width: 768px){
     .MyProject li {
         width: 100%;
+        border: 2px solid gray;
+        padding: 0.6rem;
+        border-radius: 15px;
     }
     .connection input {
         width: 100%;
         font-size: 0.6rem;
+    }
+    .overlay{
+        opacity: 1;
+        position: static;
+        background: none;
+        color: black;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .MyProject li a{
+        text-decoration: none;
     }
 }
 @media screen and (max-width: 513px){
