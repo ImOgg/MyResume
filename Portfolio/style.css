@@ -93,10 +93,6 @@ img {
     font-size: 3rem;
 }
 
-.btn {
-   
-}
-
 .social i {
     font-size: 2rem;
     line-height: 4rem;
@@ -135,7 +131,6 @@ img {
     outline: none;
     border-radius: 15px;
     cursor: pointer
-    
 }
 
 .social {
