@@ -63,10 +63,10 @@
                 <div class="connection">
                     <h2>與我聯絡</h2>
                     <form action="">
-                        <input id="name" type="text" placeholder="請輸入怎麼稱呼您呢?">
-                        <input id="email" type="text" placeholder="請輸入您的信箱">
-                        <input id="message" type="text" placeholder="請輸入想傳達的訊息">
-                        <button type="submit" class="btn">Submit</button>
+                        <input id="name" type="text"  name="name" placeholder="請輸入怎麼稱呼您呢?">
+                        <input id="email" type="text" name="email" placeholder="請輸入您的信箱">
+                        <input id="message" type="text" name="text" placeholder="請輸入想傳達的訊息">
+                        <input id="submit" class="btn" name="submit" type="submit" value="Submit">
                     </form>
 
                     <div class="social">
@@ -81,8 +81,34 @@
                 </div>
             </div>
         </section>
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function GoForm() { //這裡要對應到自己的 javascript 名稱
+    //宣告欄位
+    var field1 = $("[name='name']").val();
+    var field3 = $("[name='email']").val();
+    var field4 = $("[name='text']").val();
+    $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdcyelVxuhgMA3oQjn1EMT-Y2AexpSgVE35lKgChkWBggauVA/formResponse", //Google Form 裡面的 form action 網址 ＊＊記得要填＊＊
+        data: { //Google Form 裡面的欄位 name ＊＊記得要改＊＊
+            "entry.1603205191":field1,
+            "entry.1537638940":field3,
+            "entry.1996598147":field4,
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+            0: function () {
+                alert("已送出!"); //完成送出表單的警告視窗
+            },
+            200: function () {
+                alert("已送出!"); //完成送出表單的警告視窗
+            }
+        }
+    });
+}
+    </script>
 </body>
 
 </html>
