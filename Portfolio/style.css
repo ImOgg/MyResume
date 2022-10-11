@@ -94,13 +94,7 @@ img {
 }
 
 .btn {
-    margin: 15px;
-    font-size: 20px;
-    padding: 15px 45px;
-    border: 0;
-    outline: none;
-    border-radius: 15px;
-    cursor: pointer
+   
 }
 
 .social i {
@@ -127,12 +121,21 @@ img {
     height: 300px;
 }
 
-.connection .btn {
-    display: block;
-}
-
 .connection form {
     text-align: center;
+}
+.connection form .btn{
+    text-align: center;
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    width: 150px;
+    padding: 15px 45px;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer
+    
 }
 
 .social {
