@@ -24,8 +24,9 @@ img {
 .portfolio {
     margin: auto;
 }
-
-.header img {
+.big-head img,
+.big-head
+{
     border-radius: 50%;
 }
 
@@ -33,6 +34,7 @@ img {
     margin: 0.6rem auto;
     max-width: 200px;
     max-height: 200px;
+    overflow: hidden;
 }
 .big-head img:hover{
     transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .3s;
@@ -78,6 +80,7 @@ img {
     padding: 15px 30px;
     background: rgba(0,0,0,0.7);
     border-radius: 15px;
+    overflow: hidden;
 }
 .popup_title{
     font-size: 1.5rem;
